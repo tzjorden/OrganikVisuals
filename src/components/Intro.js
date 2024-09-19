@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import videoSrc from '../assets/website.mp4';
+
 
 function Intro() {
   const [ref, inView] = useInView({
@@ -48,7 +50,7 @@ function Intro() {
           <div className="w-full md:w-3/5">
             <div className="aspect-w-16 aspect-h-9 md:aspect-h-10 lg:aspect-h-11"> {/* Adjusted aspect ratio */}
               <video 
-                src="./assets/website.mp4" 
+                src={videoSrc}
                 controls 
                 autoPlay 
                 muted 
