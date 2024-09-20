@@ -25,13 +25,15 @@ function Header() {
                 alt="Organik Visuals Logo"
                 className="h-10 sm:h-12 w-auto object-contain"
               />
-              <span className="text-2xl sm:text-3xl font-signika font-bold text-black dark:text-white">Organik Visuals</span>
+              <span className="font-display text-xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-4xl text-black dark:text-white">Organik Visuals</span>
             </a>
           </div>
           <div className="hidden md:flex items-center space-x-6">
             <NavItem href="#intro" text="About" />
             <NavItem href="#gallery" text="Gallery" />
-            <NavItem href="#plans" text="Plans" />
+            <NavItem href="#plans" text="Packages" />
+            <NavItem href="#services" text="Services" />
+
             <button 
               onClick={toggleDarkMode} 
               className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors duration-200 hover:bg-gray-300 dark:hover:bg-gray-600"

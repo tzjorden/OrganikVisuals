@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import videoSrc from '../assets/website.mp4';
 
 
 function Intro() {
@@ -16,7 +15,7 @@ function Intro() {
   };
 
   return (
-    <section id="intro" ref={ref} className="min-h-screen flex items-center justify-center py-16 sm:py-24"> {/* Increased top padding */}
+    <section id="intro" ref={ref} className="min-h-screen flex items-center justify-center py-16 sm:py-24"> 
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -48,9 +47,9 @@ function Intro() {
             </p>
           </div>
           <div className="w-full md:w-3/5">
-            <div className="aspect-w-16 aspect-h-9 md:aspect-h-10 lg:aspect-h-11"> {/* Adjusted aspect ratio */}
+            <div className="aspect-w-16 aspect-h-9 md:aspect-h-10 lg:aspect-h-11">
               <video 
-                src={videoSrc}
+                src="assets/video.mp4"
                 controls 
                 autoPlay 
                 muted 

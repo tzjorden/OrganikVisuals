@@ -24,7 +24,7 @@ function Footer() {
             <div className="grid grid-cols-2 gap-x-4 gap-y-1">
               <a href="#intro" className="text-base hover:text-gray-300 transition-colors">Home</a>
               <a href="#gallery" className="text-base hover:text-gray-300 transition-colors">Gallery</a>
-              <a href="#plans" className="text-base hover:text-gray-300 transition-colors">Plans</a>
+              <a href="#plans" className="text-base hover:text-gray-300 transition-colors">Packages</a>
               <a href="#services" className="text-base hover:text-gray-300 transition-colors">Services</a>
             </div>
           </div>

@@ -105,7 +105,7 @@ function Plans() {
     return (
         <section id="plans" ref={ref} className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
             <div className="max-w-6xl mx-auto px-4">
-                <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Plans</h2>
+                <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Packages</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     {plans.map((plan, index) => renderPlanCard(plan, index))}
                 </div>
