@@ -49,7 +49,7 @@ function Intro() {
           <div className="w-full md:w-3/5">
             <div className="aspect-w-16 aspect-h-9 md:aspect-h-10 lg:aspect-h-11">
               <video 
-                src="assets/video.mp4"
+                src="/assets/video.mp4"
                 controls 
                 autoPlay 
                 muted 
