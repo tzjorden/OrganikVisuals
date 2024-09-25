@@ -41,12 +41,12 @@ function Intro() {
               ))}
             </motion.h1>
             <p className="text-lg sm:text-xl text-center md:text-center">
-              I am a professional photographer based in the Bay Area with a passion for capturing the beauty of homes. 
+              I am a professional Real Estate photographer based in the Bay Area with a passion for capturing the beauty of homes. 
               My goal is to present each listing in the best light possible, ensuring it stands out in a competitive market—all at a fair price. 
               Let me help you showcase your property in a way that highlights its unique charm and appeal.           
             </p>
           </div>
-          <div className="w-full md:w-3/5">
+          <div className="w-full md:w-3/5 mt-10">
             <div className="aspect-w-16 aspect-h-9 md:aspect-h-10 lg:aspect-h-11">
               <video 
                 src="/assets/video.mp4"
@@ -55,7 +55,7 @@ function Intro() {
                 muted 
                 loop 
                 playsInline 
-                className="w-full h-full object-cover rounded-lg shadow-lg"
+                className="w-full h-60 md:h-full object-cover rounded-lg shadow-lg"
               />
             </div>
           </div>

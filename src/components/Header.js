@@ -14,6 +14,24 @@ function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const closeMenu = () => setIsMenuOpen(false);
+
+  function NavItem({ href, text, mobile }) {
+    return (
+      <a 
+        href={href} 
+        className={`font-signika text-lg sm:text-xl text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-200
+          ${mobile ? 'block' : 'relative group'}`}
+      >
+        {text}
+        {!mobile && (
+          <span className="absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+        )}
+      </a>
+    );
+  }
+  
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white dark:bg-gray-900 shadow-md' : 'bg-transparent'}`}>
       <nav className="container mx-auto px-4 py-4 sm:py-6">
@@ -36,7 +54,7 @@ function Header() {
 
             <button 
               onClick={toggleDarkMode} 
-              className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors duration-200 hover:bg-gray-300 dark:hover:bg-gray-600"
+              className="p-2 rounded-full bg-white dark:bg-gray-700 transition-colors duration-200 hover:bg-gray-300 dark:hover:bg-gray-600"
               aria-label="Toggle dark mode"
             >
               {isDarkMode ? '🌞' : '🌙'}
@@ -52,11 +70,12 @@ function Header() {
           </div>
         </div>
         {isMenuOpen && (
-          <div className="md:hidden mt-4">
-            <div className="flex flex-col space-y-4">
-              <NavItem href="#intro" text="About" mobile />
-              <NavItem href="#gallery" text="Gallery" mobile />
-              <NavItem href="#plans" text="Plans" mobile />
+          <div className="absolute top-16 left-0 right-0 bg-white dark:bg-gray-900 shadow-lg transition-transform duration-300 ease-in-out">
+            <div className="flex flex-col space-y-4 p-4">
+              <a href="#intro" className="text-black dark:text-white" onClick={closeMenu}>About</a>
+              <a href="#gallery" className="text-black dark:text-white" onClick={closeMenu}>Gallery</a>
+              <a href="#plans" className="text-black dark:text-white" onClick={closeMenu}>Plans</a>
+              <a href="#services" className="text-black dark:text-white" onClick={closeMenu}>Services</a>
               <button 
                 onClick={toggleDarkMode} 
                 className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors duration-200 hover:bg-gray-300 dark:hover:bg-gray-600 self-start"
@@ -69,21 +88,6 @@ function Header() {
         )}
       </nav>
     </header>
-  );
-}
-
-function NavItem({ href, text, mobile }) {
-  return (
-    <a 
-      href={href} 
-      className={`font-signika text-lg sm:text-xl text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-200
-        ${mobile ? 'block' : 'relative group'}`}
-    >
-      {text}
-      {!mobile && (
-        <span className="absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-      )}
-    </a>
   );
 }
 

@@ -21,7 +21,6 @@ function Plans() {
                 '3D Tour: 4K 3D Virtual Tour by Matterport',
                 'Video: 1-2 Minute Cinematic Video Tour',
                 'Drone: Aerial Photos (5-10) & 4K Video',
-                'Website: Feature-rich single listing site',
                 '2D Floor Plan: Approximate measurements for illustrative purposes only',
             ]
         },
@@ -33,7 +32,6 @@ function Plans() {
                 '3D Tour: 4K 3D Virtual Tour by Matterport',
                 'Video: 1-2 Minute Cinematic Video Tour',
                 'Drone: Aerial Photos (5-10) & 4K Video',
-                'Website: Feature-rich single listing site',
                 '2D Floor Plan: Approximate measurements for illustrative purposes only',
             ]
         },
@@ -45,7 +43,6 @@ function Plans() {
                 '3D Tour: 4K 3D Virtual Tour by Matterport',
                 'Video: 1-2 Minute Cinematic Video Tour',
                 'Drone: Aerial Photos (5-10) & 4K Video',
-                'Website: Feature-rich single listing site',
                 '2D Floor Plan: Approximate measurements for illustrative purposes only',
             ]
         },
@@ -57,7 +54,6 @@ function Plans() {
                 '3D Tour: 4K 3D Virtual Tour by Matterport',
                 'Video: 1-2 Minute Cinematic Video Tour',
                 'Drone: Aerial Photos (5-10) & 4K Video',
-                'Website: Feature-rich single listing site',
                 '2D Floor Plan: Approximate measurements for illustrative purposes only',
             ]
         },

@@ -27,7 +27,7 @@ function Gallery() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % media.length);
-    }, 5000); // Change slide every 5 seconds
+    }, 3000); 
 
     return () => clearInterval(timer);
   }, [media.length]);
@@ -41,14 +41,14 @@ function Gallery() {
   };
 
   return (
-    <section id="gallery" ref={ref} className="py-12 sm:py-20 bg-white dark:bg-gray-900">
+    <section id="gallery" ref={ref} className="py-4 sm:py-8 bg-white dark:bg-gray-900">
       <motion.div 
         className="max-w-6xl mx-auto px-4"
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-800 dark:text-white">Gallery</h2>
+      <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">Gallery</h2>
         <div className="relative overflow-hidden">
           <div className="aspect-w-16 aspect-h-9">
             {media.map((item, index) => (
@@ -62,7 +62,7 @@ function Gallery() {
                   <img
                     src={item.src}
                     alt={item.alt}
-                    className="w-full h-full object-cover rounded-lg"
+                    className="w-full h-60 md:h-auto object-cover rounded-lg"
                   />
                 ) : (
                   <video
